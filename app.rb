@@ -28,8 +28,8 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     @operation = params[:operation].downcase
-    @num_1 = params[:number1]
-    @num_2 = params[:number2]
+    @num_1 = params[:number1].to_1
+    @num_2 = params[:number2].to_1
 
     case @operation
     when "add"
