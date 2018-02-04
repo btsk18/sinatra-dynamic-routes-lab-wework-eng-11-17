@@ -27,7 +27,14 @@ class App < Sinatra::Base
     @num_2 = params[:number2]
 
     case @operation
-
+    when "add"
+      return @num_1 + @num_2
+    when "subtract"
+      return @num_1 - @num_2
+    when "multiply"
+      return @num_1 * @num_2
+    when "divide"
+      return @num_1 / @num_2
     end
   end
 end
