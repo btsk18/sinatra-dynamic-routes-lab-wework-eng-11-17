@@ -33,13 +33,13 @@ class App < Sinatra::Base
 
     case @operation
     when "add"
-      return @num_1 + @num_2
+      @num_1 + @num_2
     when "subtract"
-      return @num_1 - @num_2
+      @num_1 - @num_2
     when "multiply"
-      return @num_1 * @num_2
+      @num_1 * @num_2
     when "divide"
-      return @num_1 / @num_2
+      @num_1 / @num_2
     end
   end
 end
